@@ -3,17 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawerlayoutCompa"
+    android:id="@+id/drawerlayoutCalifi"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShareFragment">
+    tools:context=".CalifFragment">
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/teal_700"
+        android:background="@color/teal_200"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,32 +28,42 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Título de la pantalla de compartir aplicación -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Compartir Aplicación"
+                android:text="Califica esta Aplicación"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Descripción -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Comparte nuestra aplicación con otras personas."
+                android:text="¡Tu opinión es importante para nosotros! Por favor, califica nuestra aplicación."
                 android:layout_gravity="center"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Botón para compartir la aplicación -->
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Compartir Aplicación"
+                android:text="Enviar Calificación"
                 android:layout_gravity="center"
+                android:background="@color/verde"
                 android:layout_marginTop="16dp" />
         </LinearLayout>
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -15,17 +15,30 @@
      <item
      android:id="@+id/nav_settings"
      android:icon="@drawable/baseline_settings_24"
-     android:title="Settings"/>
+     android:title="Configuracion"/>
 
      <item
      android:id="@+id/nav_share"
      android:icon="@drawable/baseline_share_24"
-     android:title="Share"/>
+     android:title="Compartir"/>
+
+
+         <item
+             android:id="@+id/nav_somos"
+             android:icon="@drawable/baseline_somos_24"
+             android:title="Quienes Somos"/>
+
+         <item
+             android:id="@+id/nav_calif"
+             android:icon="@drawable/baseline_calif_24"
+             android:title="Calificanos"
+/>
+
 
      <item
      android:id="@+id/nav_about"
      android:icon="@drawable/baseline_info_24"
-     android:title="About Us"/>
+     android:title="Ayuda"/>
      </group>
      <item
      android:title="">
@@ -34,7 +47,7 @@
  <item
  android:id="@+id/nav_logout"
  android:icon="@drawable/baseline_logout_24"
- android:title="Logout"/>
+ android:title="Login"/>
 </menu>
 
     </item>

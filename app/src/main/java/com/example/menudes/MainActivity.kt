@@ -48,7 +48,12 @@ import android.os.Bundle
                  .replace(R.id.fragment_container, ShareFragment()).commit()
              R.id.nav_about -> supportFragmentManager.beginTransaction()
                  .replace(R.id.fragment_container, AboutFragment()).commit()
-             R.id.nav_logout -> Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show()
+             R.id.nav_somos -> supportFragmentManager.beginTransaction()
+                 .replace(R.id.fragment_container, SomosFragment()).commit()
+             R.id.nav_calif -> supportFragmentManager.beginTransaction()
+                 .replace(R.id.fragment_container, CalifFragment()).commit()
+             R.id.nav_logout -> supportFragmentManager.beginTransaction()
+                 .replace(R.id.fragment_container, LoginFragment()).commit()
 
          }
          drawerLayout.closeDrawer(GravityCompat.START)
